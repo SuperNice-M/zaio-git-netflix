@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    background: #000;
+}
+
+/* Universal CSS */
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    color: rgb(255,255,255);
+    -webkit-text-size-adjust: 100%;
+    
+}
+
+/* Header CSS */
+.header-setion {
+    width: 100%;
+    height: 0;
+}
+
+header {
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    margin: 0px 125px;
+    padding: 24px 48px;
+    position: relative;
+    z-index: 1;
+    height: 44px;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header .header-button {
+    background-color: rgb(229, 9, 20);
+    height: 32px;
+    width: 77px;
+    background-origin: padding-box;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 0.5ch;
+}
+.header-button a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+   
+    
+}
+
+.header-button:hover {
+    background-color: rgb(153, 22, 29);
+}
+
+header div svg {
+    height: 40px;
+}
+
+/* Background CSS */
+.background-section {
+    background-image: url(./assets/bg_image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    opacity: 60%;
+    background-color: black;
+}
+
+/* Netflix Cover-Page CSS */
+.cover-page {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100% - 92px);
+    position: relative;
+}
+
+.banner-container {
+    box-sizing: initial;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    margin: 63px 138px;
+    max-width: calc(83.3333333334% - 6rem);
+    margin: auto;
+}
+
+/* Fonts CSS */
+h1 {
+    display: block;
+    font-size: 3rem;
+    text-align: center;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 0;
+    font-weight: 900;
+}
+
+h2 {
+    display: block;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.banner-container p {
+    margin: 1rem 0 0;
+    text-align: center;
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+.banner-container form h3 {
+    width: 100%;
+}
+
+.banner-container form button {
+    font-size: 1.5rem;
+}
+
+.country {
+    font-size: 0.875rem;
+    font-weight: 400;
+    -webkit-text-size-adjust: 100%;
+}
+
+footer {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Cover Page Form CSS */
+.form-section  {
+    margin: 1.5rem auto 0;
+    height: 102px;
+}
+
+.banner-container form {
+    box-sizing: initial;
+    text-align: center;
+    margin-top: 0em;
+    display: flex;
+    flex-direction: column;
+    -webkit-text-size-adjust: 100%;
+    width: 100%;
+}
+
+.banner-container form .email-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 32.625rem;
+    box-sizing: border-box;
+    margin: 16px auto 0px;
+
+}
+
+.banner-container form input {
+    height: 56px;
+    line-height: 1.5;
+    padding: 1.5rem 1rem 0.5rem;
+    min-height: 16px;
+    min-width: 12.5rem;
+    appearance: none;
+    box-sizing: border-box;
+    background: transparent;
+    background-clip: padding-box;
+    border: 1 solid white;
+    font: inherit;letter-spacing: inherit;
+    margin: 0;
+    text-align: inherit;
+    text-decoration: inherit;
+    text-transform: inherit;
+    padding-block: 1px;
+    padding-inline: 2px;
+    border-radius: 0.25rem;
+    width: calc(100% - 212.781px);
+    position: relative;
+
+}
+
+.banner-container form button {
+    display: flex;
+    box-sizing: border-box;
+    height: 56px;
+    width: auto;
+    background: rgb(229, 9, 20);
+    padding: 12px 24px;
+    margin-left: 8px;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.banner-container form button:hover {
+    background-color: rgb(153, 22, 29);
+}
+
+.button-arrow {
+    margin: 0;
+    margin-left: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* TV Info CSS */
+
+.tv-info {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 72px 0px;
+    margin: 0px 160.422px;
+    width: auto;
+    /* position: relative; */
+}
+
+
+
+.tv-info .words {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 6px;
+}
+
+.tv-info .words h2 {
+    text-align: left;
+}
+
+.tv-info .words p {
+    text-align: left;
+}
+
+.tv-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 6px;
+    height: 385.05px;
+    width: 508.08px;
+}
+
+.tv-image img {
+    z-index: 1;
+}
+
+.tv-image .tv-video {
+    position: absolute;
+    width: 600px;
+    height: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tv-video video {
+    padding: 0px;
+}
+
+
+/* Footer CSS */
+
+form div {
+    display: flex;
+    align-items: flex-start;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 16px;
+}
+
+footer {
+    color: rgba(255,255,255,0.7);
+    margin: 72px 112.422px;
+    box-sizing: unset;
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.footer-body {
+    color: rgba(255,255,255,0.7);
+    height: auto;
+    width: 100%;
+    text-size-adjust: 100%;
+}
+
+.footer-list {
+    margin: 12px 0px;
+}
+
+.footer-header {
+    box-sizing: content-box;
+    color: rgb(255,255,255,0.7);
+    cursor: default;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    flex: 0 0 100%;
+    height: 33px;
+    width: 100%;
+}
+
+.footer-header a {
+    color: rgb(255,255,255,0.7);
+}
+
+footer .footer-list ul {
+    color: rgb(255,255,255,0.7);
+    display: inline-flex;
+    flex-direction: row;
+    height: inherit;
+    list-style-type: none;
+    padding: 0px;
+    list-style-type: disc;
+    margin-top: -1rem;
+    margin-left:  -0.75rem;
+    flex-wrap: wrap;
+    padding: 0px;
+    columns: 4;
+    width: calc(100% + 0.75rem);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+footer ul li {
+    color: rgb(255,255,255,0.7);
+    display: flex;
+    flex: 0 0 calc(25% - 12px);
+    flex-wrap: wrap;
+    text-align: left;
+    font-size: 14px;
+    line-height: 2;
+    width: inherit;
+    margin-top: 1rem;
+    margin-left: 0.75rem;
+}
+
+.language {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    color: #999999;
+    border: 1px solid #999999;
+    font-size: 1rem;
+    font-weight: 400;
+    height: auto;
+    width: calc(100% -1.5rem);
+    position: relative;
+    margin-top: 8px;
+    margin-left: 24px;
+    gap: 2px;
+    border-radius: 0px;
+}
+.language-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: -8px;
+    margin-left: -24px;
+    width: 100%;
+}
+
+.language i {
+    height: 16px;
+    width: 16px;
+    font-size: 16px;
+    position: absolute;
+    right: 95px;
+    left: 12px;
+    color: #999999;
+}
+
+
+.language select {
+    appearance: none;
+    color: #999999;
+    font-size: 16px;
+    border: none;
+    background-color: black;
+    padding: 6px 36px;
+    
+} 
+
+.down-arrow {
+    height: 16px;
+    width: 16px;
+    font-size: 16px;
+    position: absolute;
+    left: 95px;
+    right: 12px;
+    color: #999999;
+}
+
+.country {
+    margin-top: 1.5rem;
+    color: rgb(255,255,255,0.7);
+}
+
